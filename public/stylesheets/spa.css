@@ -1,0 +1,678 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+
+body{
+    background-color: rgba(191, 140, 140, 0.6) ;
+    padding-top: 180px
+}
+
+    body > section {
+    scroll-margin-top: 180px
+    }
+
+
+.holder{
+    max-width: 960px;/*maxímo ancho pensado para una pantalla de 1024*/
+    margin: 0 auto;
+    
+}
+
+
+/*header*/
+header{
+    top: 0;
+    height: 150px;
+    width: 100%;
+    background-color:rgb(196, 128, 151) ;
+    z-index: 100; /*para poder fijar el encabezado*/
+    box-sizing: border-box;
+    position: fixed;
+
+}
+
+.contenedor{
+    display: flex;
+    position: relative;   
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    color: rgba(137, 54, 215, 0.7);
+    font-size: 35px;
+    margin: 0 10px;
+    position: absolute;
+    bottom: -30px;
+}
+
+header img {
+    margin: 10px ;
+}
+
+.nombre {
+    font-size: 70px;
+    color: rgba(224, 16, 113, 0.6);
+} 
+
+/*header*/
+
+/*nav*/
+
+nav {
+    margin-top: 30px;
+    display: flex;
+    height: 30px;  
+   
+}
+
+
+nav a{
+    text-decoration: none;
+    color: rgba(46, 3, 42, 0.5); 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    flex-grow: 1; /*va acompañado de la propiedad display flex del nav */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(158, 10, 116, 0.8); 
+   
+} 
+
+
+nav a:hover{
+    background-color: rgb(239, 133, 239);
+}
+
+/*nav*/
+
+/*inicio home*/
+
+p{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding:0 120px;
+  
+}
+
+h2{
+    margin: 0 auto 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    color: rgb(142, 30, 84);
+    text-align: center;
+      
+}
+
+.bienvenidos{
+    position: relative;
+    top: -680px;
+}
+
+.caja1{
+    max-height: 750px;
+    animation-name: desenfoque;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes desenfoque{
+    to{
+        filter: blur(0);
+    }
+    from{
+        filter:blur(10px)
+    }
+}
+
+.caja1 img{
+    opacity: 0.5;
+    width: 100%;
+   
+}
+/*fin home*/
+
+/*inicio quines somos*/
+
+.caja2{
+    max-height: 720px;
+
+}
+
+.caja2 h2{
+    transition: all 3s ease;
+    transform: scale(0.5);
+}
+
+.caja2:hover h2{
+    transform: scale(1);
+}
+
+.caja2 p{
+    transition: all 3s ease;
+    transform: scale(0.5);
+    
+}
+
+.caja2:hover p{
+    transform: scale(1);
+}
+
+.profesionales{
+    position: relative;
+    top: -680px;
+}
+
+.profesionales_p{
+    position: relative;
+    top: -680px;
+}
+
+.caja2 img{
+    opacity: 0.5;
+    width: 100%;
+}
+
+/*fin quines somos*/
+
+
+/*inicio servicios*/
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    color: rgb(142, 30, 84);
+    text-align: center;  
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.grid-contenedor{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+div .col-1{
+    grid-column: 1;
+    grid-row:1 / span 2;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(105, 9, 82); 
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.col-1 h4{
+    margin: 0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.col-1 ul{
+    list-style: none;
+    padding: 0;
+   
+}
+
+.col-1 h5{
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+div .col-2{
+    grid-column: 2;
+    grid-row:1 / span 2;
+    max-height: 500px;
+    overflow: hidden;/*para que el zoom aplicado a la imagen no salga del contenedor*/
+}
+
+div .col-3imagen1{
+    grid-column: 3;
+    grid-row:1;
+    max-height: 250px;
+    overflow: hidden;
+}
+div .col-3imagen2{
+    grid-column: 3;
+    grid-row:2;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.col-2 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+} 
+
+.col-2:hover img{
+    transform: scale(1.05);
+}
+
+.col-3imagen1 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+} 
+
+.col-3imagen1:hover img{
+    transform: scale(1.05);
+}
+
+.col-3imagen2 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+} 
+
+.col-3imagen2:hover img{
+    transform: scale(1.05);
+}
+
+
+.grid-contenedor1{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    
+}
+
+div .contenido1{
+    grid-column: 1;
+    grid-row: 1;
+    overflow: hidden;
+}
+
+div .contenido2{
+    grid-column: 1;
+    grid-row: 2;
+    overflow: hidden;
+}
+
+div .contenido3{
+    grid-column: 2;
+    grid-row: 1;
+    overflow: hidden;
+}
+
+div .contenido4{
+    grid-column: 2;
+    grid-row: 2;
+    overflow: hidden;
+}
+
+div .contenido5{
+    grid-column: 3;
+    grid-row:1/span 2 ;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(105, 9, 82); 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenido1 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido1:hover img{
+    transform: scale(1.05);
+}
+
+.contenido2 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido2:hover img{
+    transform: scale(1.05);
+}
+
+.contenido3 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido3:hover img{
+    transform: scale(1.05);
+}
+
+.contenido4 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido4:hover img{
+    transform: scale(1.05);
+}
+
+.contenido5 h4{
+    margin: 0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.contenido5 ul{
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.contenido5 h5{
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.grid-contenedor2{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    max-height: 500px;
+}
+
+.contenido6 ul{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.contenido6 h4{
+    margin: 0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.contenido6 h5{
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+div .contenido6{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(105, 9, 82); 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div .contenido7{
+    grid-column: 2;
+    grid-row: 1;
+    overflow: hidden;
+}
+
+div .contenido8{
+    grid-column: 2;
+    grid-row: 2 ;
+    overflow: hidden;
+}
+
+div .contenido9{
+    grid-column: 3;
+    grid-row: 1 ;
+    overflow: hidden;
+}
+
+div .contenido10{
+    grid-column: 3;
+    grid-row: 2 ;
+    overflow: hidden;
+}
+
+.contenido7 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido7:hover img{
+    transform: scale(1.05);
+}
+
+.contenido8 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido8:hover img{
+    transform: scale(1.05);
+}
+
+.contenido9 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido9:hover img{
+    transform: scale(1.05);
+}
+
+.contenido10 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido10:hover img{
+    transform: scale(1.05);
+}
+
+
+.contenedor3 h4{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(105, 9, 82); 
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+div .contenido11 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}    
+ 
+div .contenido11{
+    overflow: hidden;
+}
+
+.contenido11 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido11:hover img{
+    transform: scale(1.05);
+}
+
+
+.contenido11 p{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(105, 9, 82); 
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
+    padding: 0 20px 0 0;
+}    
+
+
+/*fin servicios*/
+
+/*inicio tarifas*/
+
+.combos{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+
+}
+
+.combo{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 20% ; 
+    border-radius: 15px;
+    background-color: rgba(45, 7, 36, 0.4);
+    box-shadow: 14px -3px 20px black;  
+  
+}
+
+.combo h4{
+    color: rgb(105, 9, 82);
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    margin: 40px auto;
+    text-align: center;
+
+}
+
+.combo h5{
+    color: rgb(105, 9, 82);
+    text-decoration: underline;
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.combo ul{
+    color: rgb(105, 9, 82);   
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    list-style-type: square;
+    padding-inline-start: 30px;
+}
+   
+.combo ul li{
+    margin-bottom: 10px;
+}
+
+.item {
+    visibility: hidden;
+}
+
+
+.precio{
+    padding: 15px;
+   
+}
+
+.precio h6{
+    border: 2px solid black;
+    border-radius: 50%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgba(18, 15, 34, 0.6); 
+    padding: 35px;
+    margin: 20px auto ;
+    font-size: 25px;
+    background-color: rgba(17, 39, 45, 0.3);
+}
+
+/*fin tarifas*/
+
+/*inicio contacto*/
+
+.contacto{
+    display: flex;
+    justify-content: center;    
+    gap: 40px;
+}
+
+.formulario p{
+    /* display: flex; */
+    padding: 5px;
+    margin: 0;
+}
+
+.consulta h4,
+.datos h4{
+    color: rgb(105, 9, 82);
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.formulario p label{
+    color: rgb(105, 9, 82);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.formulario p input,
+.formulario p textarea{
+    background-color: rgba(154, 152, 152, 0.6);
+    border-radius: 5px;
+    border: 1px solid rgb(51, 3, 55);
+    font-size: 20px;
+    padding: 5px ;
+    color: white;
+        
+}
+
+.formulario p textarea{
+    height: 200px; 
+    resize: none;
+}  
+
+.formulario input[type="submit"]{
+    background-color: rgba(154, 152, 152, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0 , 0, 4);
+    color: white;
+    font-size: 15px;
+    padding: 6px 12px;
+    position: relative; 
+    left: 10px;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: rgb(105, 9, 82, 0.5);
+} 
+
+.datos ul li{
+    color: rgb(105, 9, 82);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+}
+
+.fa-solid,
+.fa-brands{
+    margin-right: 10px;
+    font-size: 25px ;
+}
+
+/*fin contacto*/
+
+
+footer{
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(154, 152, 152, 0.6);; 
+    text-align: center;
+}    
+
+.final p{
+    font-size: 15px ;
+    color: rgb(105, 9, 82);
+}
