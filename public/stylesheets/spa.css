@@ -648,6 +648,11 @@ div .contenido11{
     background-color: rgb(105, 9, 82, 0.5);
 } 
 
+.mensaje{
+    font-size: 15px;
+    
+}
+
 .datos ul li{
     color: rgb(105, 9, 82);
     font-size: 20px;
