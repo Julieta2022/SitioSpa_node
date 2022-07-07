@@ -1,0 +1,23 @@
+h1 {
+    font-weight: bold;
+   
+}
+
+
+
+.mb-3{
+    width: 400px;
+
+}
+
+.btn-primary {
+    background-color: rgba(154, 152, 152, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0 , 0, 4);
+    color: white;
+    font-size: 15px;
+    border-color: black;
+}
+
+.btn-primary:hover{
+    background-color: rgb(105, 9, 82, 0.5);
+} 
