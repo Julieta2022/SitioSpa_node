@@ -2,38 +2,40 @@
 font-family: 'Montserrat', sans-serif; */
 
 
-body{
-    background-color: rgba(191, 140, 140, 0.6) ;
+body {
+    background-color: rgba(191, 140, 140, 0.6);
     padding-top: 180px
 }
 
-    body > section {
+body>section {
     scroll-margin-top: 180px
-    }
+}
 
 
-.holder{
-    max-width: 960px;/*maxímo ancho pensado para una pantalla de 1024*/
+.holder {
+    max-width: 960px;
+    /*maxímo ancho pensado para una pantalla de 1024*/
     margin: 0 auto;
-    
+
 }
 
 
 /*header*/
-header{
+header {
     top: 0;
     height: 150px;
     width: 100%;
-    background-color:rgb(196, 128, 151) ;
-    z-index: 100; /*para poder fijar el encabezado*/
+    background-color: rgb(196, 128, 151);
+    z-index: 100;
+    /*para poder fijar el encabezado*/
     box-sizing: border-box;
     position: fixed;
 
 }
 
-.contenedor{
+.contenedor {
     display: flex;
-    position: relative;   
+    position: relative;
 }
 
 header h1 {
@@ -46,13 +48,13 @@ header h1 {
 }
 
 header img {
-    margin: 10px ;
+    margin: 10px;
 }
 
 .nombre {
     font-size: 70px;
     color: rgba(224, 16, 113, 0.6);
-} 
+}
 
 /*header*/
 
@@ -61,27 +63,28 @@ header img {
 nav {
     margin-top: 30px;
     display: flex;
-    height: 30px;  
-   
+    height: 30px;
+
 }
 
 
-nav a{
+nav a {
     text-decoration: none;
-    color: rgba(46, 3, 42, 0.5); 
+    color: rgba(46, 3, 42, 0.5);
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    flex-grow: 1; /*va acompañado de la propiedad display flex del nav */
+    flex-grow: 1;
+    /*va acompañado de la propiedad display flex del nav */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgba(158, 10, 116, 0.8); 
-   
-} 
+    background-color: rgba(158, 10, 116, 0.8);
+
+}
 
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(239, 133, 239);
 }
 
@@ -89,89 +92,91 @@ nav a:hover{
 
 /*inicio home*/
 
-p{
+p {
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    padding:0 120px;
-  
+    padding: 0 120px;
+
 }
 
-h2{
+h2 {
     margin: 0 auto 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     color: rgb(142, 30, 84);
     text-align: center;
-      
+
 }
 
-.bienvenidos{
+.bienvenidos {
     position: relative;
     top: -680px;
 }
 
-.caja1{
+.caja1 {
     max-height: 750px;
     animation-name: desenfoque;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    
+
 }
 
-@keyframes desenfoque{
-    to{
+@keyframes desenfoque {
+    to {
         filter: blur(0);
     }
-    from{
-        filter:blur(10px)
+
+    from {
+        filter: blur(10px)
     }
 }
 
-.caja1 img{
+.caja1 img {
     opacity: 0.5;
     width: 100%;
-   
+
 }
+
 /*fin home*/
 
 /*inicio quines somos*/
 
-.caja2{
+.caja2 {
     max-height: 720px;
 
 }
 
-.caja2 h2{
+.caja2 h2 {
     transition: all 3s ease;
     transform: scale(0.5);
 }
 
-.caja2:hover h2{
+.caja2:hover h2 {
     transform: scale(1);
 }
 
-.caja2 p{
+.caja2 p {
     transition: all 3s ease;
     transform: scale(0.5);
-    
+
 }
 
-.caja2:hover p{
+.caja2:hover p {
     transform: scale(1);
 }
 
-.profesionales{
+.profesionales {
     position: relative;
     top: -680px;
 }
 
-.profesionales_p{
+.profesionales_p {
     position: relative;
     top: -680px;
 }
 
-.caja2 img{
+.caja2 img {
     opacity: 0.5;
     width: 100%;
 }
@@ -181,25 +186,25 @@ h2{
 
 /*inicio servicios*/
 
-h3{
+h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     color: rgb(142, 30, 84);
-    text-align: center;  
+    text-align: center;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
-.grid-contenedor{
+.grid-contenedor {
     display: grid;
     grid-template-columns: 30% 40% 30%;
 }
 
-div .col-1{
+div .col-1 {
     grid-column: 1;
-    grid-row:1 / span 2;
+    grid-row: 1 / span 2;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(105, 9, 82); 
+    color: rgb(105, 9, 82);
     max-height: 500px;
     display: flex;
     align-items: center;
@@ -207,109 +212,111 @@ div .col-1{
     flex-direction: column;
 }
 
-.col-1 h4{
+.col-1 h4 {
     margin: 0;
     font-size: 20px;
     text-decoration: underline;
 }
 
-.col-1 ul{
+.col-1 ul {
     list-style: none;
     padding: 0;
-   
+
 }
 
-.col-1 h5{
+.col-1 h5 {
     margin: 0;
     padding: 5px;
     font-size: 18px;
     font-weight: lighter;
 }
 
-div .col-2{
+div .col-2 {
     grid-column: 2;
-    grid-row:1 / span 2;
+    grid-row: 1 / span 2;
     max-height: 500px;
-    overflow: hidden;/*para que el zoom aplicado a la imagen no salga del contenedor*/
+    overflow: hidden;
+    /*para que el zoom aplicado a la imagen no salga del contenedor*/
 }
 
-div .col-3imagen1{
+div .col-3imagen1 {
     grid-column: 3;
-    grid-row:1;
-    max-height: 250px;
-    overflow: hidden;
-}
-div .col-3imagen2{
-    grid-column: 3;
-    grid-row:2;
+    grid-row: 1;
     max-height: 250px;
     overflow: hidden;
 }
 
-.col-2 img{
+div .col-3imagen2 {
+    grid-column: 3;
+    grid-row: 2;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.col-2 img {
     transition: all 0.5s ease;
     transform: scale(1);
-} 
+}
 
-.col-2:hover img{
+.col-2:hover img {
     transform: scale(1.05);
 }
 
-.col-3imagen1 img{
+.col-3imagen1 img {
     transition: all 0.5s ease;
     transform: scale(1);
-} 
+}
 
-.col-3imagen1:hover img{
+.col-3imagen1:hover img {
     transform: scale(1.05);
 }
 
-.col-3imagen2 img{
+.col-3imagen2 img {
     transition: all 0.5s ease;
     transform: scale(1);
-} 
+}
 
-.col-3imagen2:hover img{
+.col-3imagen2:hover img {
     transform: scale(1.05);
 }
 
 
-.grid-contenedor1{
+.grid-contenedor1 {
     margin-top: 35px;
     display: grid;
     grid-template-columns: 30% 40% 30%;
-    
+
 }
 
-div .contenido1{
+div .contenido1 {
     grid-column: 1;
     grid-row: 1;
     overflow: hidden;
 }
 
-div .contenido2{
+div .contenido2 {
     grid-column: 1;
     grid-row: 2;
     overflow: hidden;
 }
 
-div .contenido3{
+div .contenido3 {
     grid-column: 2;
     grid-row: 1;
     overflow: hidden;
 }
 
-div .contenido4{
+div .contenido4 {
     grid-column: 2;
     grid-row: 2;
     overflow: hidden;
 }
 
-div .contenido5{
+div .contenido5 {
     grid-column: 3;
-    grid-row:1/span 2 ;
+    grid-row: 1/span 2;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(105, 9, 82); 
+    color: rgb(105, 9, 82);
     text-align: center;
     display: flex;
     align-items: center;
@@ -317,92 +324,92 @@ div .contenido5{
     flex-direction: column;
 }
 
-.contenido1 img{
+.contenido1 img {
     transition: all 0.5s ease;
     transform: scale(1);
 }
 
-.contenido1:hover img{
+.contenido1:hover img {
     transform: scale(1.05);
 }
 
-.contenido2 img{
+.contenido2 img {
     transition: all 0.5s ease;
     transform: scale(1);
 }
 
-.contenido2:hover img{
+.contenido2:hover img {
     transform: scale(1.05);
 }
 
-.contenido3 img{
+.contenido3 img {
     transition: all 0.5s ease;
     transform: scale(1);
 }
 
-.contenido3:hover img{
+.contenido3:hover img {
     transform: scale(1.05);
 }
 
-.contenido4 img{
+.contenido4 img {
     transition: all 0.5s ease;
     transform: scale(1);
 }
 
-.contenido4:hover img{
+.contenido4:hover img {
     transform: scale(1.05);
 }
 
-.contenido5 h4{
+.contenido5 h4 {
     margin: 0;
     font-size: 20px;
     text-decoration: underline;
 }
 
-.contenido5 ul{
+.contenido5 ul {
     list-style: none;
     padding: 10px;
     text-align: left;
 }
 
-.contenido5 h5{
+.contenido5 h5 {
     margin: 0;
     padding: 5px;
     font-size: 18px;
     font-weight: lighter;
 }
 
-.grid-contenedor2{
+.grid-contenedor2 {
     margin-top: 35px;
     display: grid;
     grid-template-columns: 40% 30% 30%;
     max-height: 500px;
 }
 
-.contenido6 ul{
+.contenido6 ul {
     list-style: none;
     padding: 0;
     text-align: left;
 }
 
-.contenido6 h4{
+.contenido6 h4 {
     margin: 0;
     font-size: 20px;
     text-decoration: underline;
 }
 
-.contenido6 h5{
+.contenido6 h5 {
     margin: 0;
     padding: 5px;
     font-size: 18px;
     font-weight: lighter;
 }
 
-div .contenido6{
+div .contenido6 {
     grid-column: 1;
     grid-row: 1 / span 2;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(105, 9, 82); 
+    color: rgb(105, 9, 82);
     text-align: center;
     display: flex;
     align-items: center;
@@ -410,70 +417,70 @@ div .contenido6{
     flex-direction: column;
 }
 
-div .contenido7{
+div .contenido7 {
     grid-column: 2;
     grid-row: 1;
     overflow: hidden;
 }
 
-div .contenido8{
+div .contenido8 {
     grid-column: 2;
-    grid-row: 2 ;
+    grid-row: 2;
     overflow: hidden;
 }
 
-div .contenido9{
+div .contenido9 {
     grid-column: 3;
-    grid-row: 1 ;
+    grid-row: 1;
     overflow: hidden;
 }
 
-div .contenido10{
+div .contenido10 {
     grid-column: 3;
-    grid-row: 2 ;
+    grid-row: 2;
     overflow: hidden;
 }
 
-.contenido7 img{
+.contenido7 img {
     transition: all 0.5s ease;
     transform: scale(1);
 }
 
-.contenido7:hover img{
+.contenido7:hover img {
     transform: scale(1.05);
 }
 
-.contenido8 img{
+.contenido8 img {
     transition: all 0.5s ease;
     transform: scale(1);
 }
 
-.contenido8:hover img{
+.contenido8:hover img {
     transform: scale(1.05);
 }
 
-.contenido9 img{
+.contenido9 img {
     transition: all 0.5s ease;
     transform: scale(1);
 }
 
-.contenido9:hover img{
+.contenido9:hover img {
     transform: scale(1.05);
 }
 
-.contenido10 img{
+.contenido10 img {
     transition: all 0.5s ease;
     transform: scale(1);
 }
 
-.contenido10:hover img{
+.contenido10:hover img {
     transform: scale(1.05);
 }
 
 
-.contenedor3 h4{
+.contenedor3 h4 {
     font-family: 'Montserrat', sans-serif;
-    color: rgb(105, 9, 82); 
+    color: rgb(105, 9, 82);
     text-align: center;
     margin-top: 40px;
     font-size: 20px;
@@ -485,54 +492,54 @@ div .contenido11 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}    
- 
-div .contenido11{
+}
+
+div .contenido11 {
     overflow: hidden;
 }
 
-.contenido11 img{
+.contenido11 img {
     transition: all 0.5s ease;
     transform: scale(1);
 }
 
-.contenido11:hover img{
+.contenido11:hover img {
     transform: scale(1.05);
 }
 
 
-.contenido11 p{
+.contenido11 p {
     font-family: 'Montserrat', sans-serif;
-    color: rgb(105, 9, 82); 
+    color: rgb(105, 9, 82);
     text-align: left;
     margin: 0;
     font-size: 20px;
     padding: 0 20px 0 0;
-}    
+}
 
 
 /*fin servicios*/
 
 /*inicio tarifas*/
 
-.combos{
+.combos {
     display: flex;
     justify-content: space-between;
     height: 600px;
 
 }
 
-.combo{
+.combo {
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
-    width: 20% ; 
+    width: 20%;
     border-radius: 15px;
     background-color: rgba(45, 7, 36, 0.4);
-    box-shadow: 14px -3px 20px black;  
-  
+    box-shadow: 14px -3px 20px black;
+
 }
 
-.combo h4{
+.combo h4 {
     color: rgb(105, 9, 82);
     font-size: 35px;
     font-family: 'Dancing Script', cursive;
@@ -541,7 +548,7 @@ div .contenido11{
 
 }
 
-.combo h5{
+.combo h5 {
     color: rgb(105, 9, 82);
     text-decoration: underline;
     margin-bottom: 15px;
@@ -549,16 +556,16 @@ div .contenido11{
     text-align: center;
 }
 
-.combo ul{
-    color: rgb(105, 9, 82);   
+.combo ul {
+    color: rgb(105, 9, 82);
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     list-style-type: square;
     padding-inline-start: 30px;
 }
-   
-.combo ul li{
+
+.combo ul li {
     margin-bottom: 10px;
 }
 
@@ -567,19 +574,19 @@ div .contenido11{
 }
 
 
-.precio{
+.precio {
     padding: 15px;
-   
+
 }
 
-.precio h6{
+.precio h6 {
     border: 2px solid black;
     border-radius: 50%;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: rgba(18, 15, 34, 0.6); 
+    color: rgba(18, 15, 34, 0.6);
     padding: 35px;
-    margin: 20px auto ;
+    margin: 20px auto;
     font-size: 25px;
     background-color: rgba(17, 39, 45, 0.3);
 }
@@ -588,27 +595,27 @@ div .contenido11{
 
 /*inicio contacto*/
 
-.contacto{
+.contacto {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     gap: 40px;
 }
 
-.formulario p{
+.formulario p {
     /* display: flex; */
     padding: 5px;
     margin: 0;
 }
 
 .consulta h4,
-.datos h4{
+.datos h4 {
     color: rgb(105, 9, 82);
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
-.formulario p label{
+.formulario p label {
     color: rgb(105, 9, 82);
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -618,42 +625,42 @@ div .contenido11{
 }
 
 .formulario p input,
-.formulario p textarea{
+.formulario p textarea {
     background-color: rgba(154, 152, 152, 0.6);
     border-radius: 5px;
     border: 1px solid rgb(51, 3, 55);
     font-size: 20px;
-    padding: 5px ;
+    padding: 5px;
     color: white;
-        
+
 }
 
-.formulario p textarea{
-    height: 200px; 
+.formulario p textarea {
+    height: 200px;
     resize: none;
-}  
+}
 
-.formulario input[type="submit"]{
+.formulario input[type="submit"] {
     background-color: rgba(154, 152, 152, 0.6);
-    box-shadow: 0 0 10px rgba(0, 0 , 0, 4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 4);
     color: white;
     font-size: 15px;
     padding: 6px 12px;
-    position: relative; 
+    position: relative;
     left: 10px;
     cursor: pointer;
 }
 
-.formulario input[type="submit"]:hover{
+.formulario input[type="submit"]:hover {
     background-color: rgb(105, 9, 82, 0.5);
-} 
-
-.mensaje{
-    font-size: 15px;
-    
 }
 
-.datos ul li{
+.mensaje {
+    font-size: 15px;
+
+}
+
+.datos ul li {
     color: rgb(105, 9, 82);
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -661,23 +668,211 @@ div .contenido11{
 }
 
 .fa-solid,
-.fa-brands{
+.fa-brands {
     margin-right: 10px;
-    font-size: 25px ;
+    font-size: 25px;
 }
 
 /*fin contacto*/
 
 
-footer{
+footer {
     clear: both;
     text-align: center;
     margin-top: 20px;
-    background-color: rgba(154, 152, 152, 0.6);; 
+    background-color: rgba(154, 152, 152, 0.6);
+    ;
     text-align: center;
-}    
+}
 
-.final p{
-    font-size: 15px ;
+.final p {
+    font-size: 15px;
     color: rgb(105, 9, 82);
 }
+
+/*responsive*/
+@media screen and (max-width:550px) {
+
+    header h1 {
+        font-size: 30px;
+        position: relative;
+        margin-top: 35px;
+        bottom: 0;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .nombre {
+        font-size: 40px;
+    }
+
+    .caja1 {
+        max-height: 200px;
+    }
+
+    .bienvenidos {
+        top: -200px
+    }
+
+    p {
+        font-size: 12px;
+        padding: 0;
+        margin: 10px 0 0
+    }
+
+    h2 {
+        margin: 20px 0 0;
+        font-size: 25px;
+
+    }
+
+    .caja2 {
+        max-height: 200px;
+    }
+
+    .profesionales {
+        top: -200px
+    }
+
+    .profesionales_p {
+        top: -200px
+    }
+
+    h3 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .grid-contenedor {
+        grid-template-columns: 50% 50%;
+        height: 200px;
+    }
+
+   
+    div .col-1 {
+        grid-row: 1;
+        max-height: 200px;
+    }
+
+    .col-1 h4,
+    .col-1 h5 {
+        font-size: 12px;
+    }
+
+    div .col-2 {
+        grid-row: 1;
+        max-height: 200px;
+    }
+
+    .col-2 img {
+        width: 95%;
+    }
+
+    div .col-3imagen1,
+    div .col-3imagen2 {
+        grid-column: none;
+    }    
+
+    .grid-contenedor1 {
+        grid-template-columns: 50% 50%;
+        height: 235px;
+        margin-top: 10px;
+    }
+
+    div .contenido1,
+    div .contenido2,
+    div .contenido4 {
+        grid-column: none;
+    }
+
+    div .contenido5 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    div .contenido3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+    .contenido3 img {
+        width: 95%;
+    }
+
+    .contenido5 h4 {
+        margin-top: 5px;
+    }
+
+    .contenido5 h4,
+    .contenido5 h5 {
+        font-size: 12px;
+    }
+
+    .contenido5 ul {
+        margin: 0;
+    }
+
+    .grid-contenedor2 {
+        grid-template-columns: 50% 50%;
+       height: 110px;
+       margin-top: 30px;
+    }
+
+    div .contenido6 {
+        grid-row: 1;
+       padding-right: 50px;
+      
+    }
+
+    .contenido6 h4,
+    .contenido6 h5 {
+        font-size: 12px;
+    }
+
+    div .contenido7,
+    div .contenido9,
+    div .contenido10{
+        grid-column: none;
+    }    
+
+    div .contenido8 {
+        grid-row: 1;
+    }    
+
+    .contenido8 img {
+        width: 95%;
+    }
+
+    .contenedor3 h4 {
+        margin-top: 30px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    div .contenido11{
+        flex-direction: column;
+    }
+
+    .contenido11 p{
+        font-size: 13px;
+        padding: 10px 40px 0px 40px;
+    }
+
+    .contenido11 img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+
+    }
+
+
+}
+        /*fin responsive*/
