@@ -43,8 +43,14 @@ router.post('/agregar', async (req, res, next) => {
       message:'No se cargó el combo de promoción'
     })
   }
-
 })
 
+router.get('/eliminar/:id', async (req,res,next) =>{
+  // console.log(req.params.id);
+  var id = req.params.id;
+  await promocionesModel.deletePromocionByID(id);
+  res.redirect('/admin/promociones')
+
+})
 
 module.exports = router;

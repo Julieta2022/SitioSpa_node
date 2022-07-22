@@ -18,5 +18,11 @@ async function insertPromociones(obj){
     }
 }
 
+async function deletePromocionByID(id){
+    var query = 'delete from promociones where id= ?'
+    var rows = await pool.query(query,[id]);
+    return rows;
+}
 
-module.exports = { getPromociones, insertPromociones }
+
+module.exports = { getPromociones, insertPromociones, deletePromocionByID }
