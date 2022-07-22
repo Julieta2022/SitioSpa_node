@@ -1,0 +1,30 @@
+<div class="container" style="margin-right:0 ; margin-left: 548px">
+    <div class="row">
+        <div class="col">
+            <h3 style="font-size:20px; text-align: left">Agregar Combo de Promoción</h3>
+            <form action="/admin/promociones/agregar" method="post" >
+                <div class="mb-3">
+                     <label class="form-label">Combo</label>
+                    <input type="text" class="form-control" name="combo">
+                </div>
+                <div class="mb-3" >
+                    <label class="form-label">Servicios</label>
+                   <textarea class="form-control" rows="3" name="servicios"></textarea> 
+                </div>
+                 <div class="mb-3">
+                     <label class="form-label">Precio</label>
+                    <input type="text" class="form-control" name="precio">
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+
+            </form>
+            {{#if error}}
+            <p style="font-size: 12px; text-align: left; margin-top: 10px; padding: 0">{{message}}
+            </p>
+            {{/if}}
+
+        </div>
+
+    </div>
+
+</div>
