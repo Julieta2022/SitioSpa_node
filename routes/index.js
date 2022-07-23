@@ -1,12 +1,17 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer')
-
+var promocionesModel = require('../models/promocionesModel');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index');
+router.get('/', async function (req, res, next) {
+  var promociones = await promocionesModel.getPromocionesfront();
+
+  res.render('index',{
+    promociones
+  });
 }) 
+
 
 router.post('/',async function(req,res,next){
 // console.log(req.body)

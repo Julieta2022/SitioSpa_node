@@ -143,22 +143,23 @@
 
 <section id="tarifas" class="holder">
     <h3>Tarifas</h3>
+   
     <div class="combos">
+         {{#each promociones}}
         <div class="combo">
-            <h4 class="tarifa">COMBO 1</h4>
+            <h4 class="tarifa">{{combo}}</h4>
             <h5>Incluye:</h5>
             <ul>
-                <li>Limpieza facial y exfoliación</li>
-                <li>Masaje facial</li>
-                <li>Masaje descontracturante 30'</li>
-                <li class="item"></li>
-                <li class="item"></li>
+               {{servicios}}
             </ul>
             <div class="precio">
-                <h6>Precio $</h6>
+                <h6>{{precio}}</h6>
             </div>
         </div>
-        <div class="combo">
+        {{/each}}
+    </div>    
+        
+        {{!-- <div class="combo">
             <h4>COMBO 2</h4>
             <h5>Incluye:</h5>
             <ul>
@@ -201,8 +202,7 @@
                 <h6>Precio $</h6>
             </div>
         </div>
-
-    </div>
+    </div> --}}
 
 </section>
 

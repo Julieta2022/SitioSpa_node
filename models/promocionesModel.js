@@ -4,7 +4,14 @@ async function getPromociones(){
     var query = 'select * from promociones';
     var rows= await pool.query(query);
     return rows;
-}
+}// limit 4 es para que muestre solo 4
+
+async function getPromocionesfront(){
+    var query = 'select * from promociones limit 4';
+    var rows= await pool.query(query);
+    return rows;
+}// limit 4 es para que muestre solo 4 en el front
+
 
 async function insertPromociones(obj){
     try{
@@ -41,4 +48,4 @@ async function updatePromocionByID(obj,id){
     }    
 }
 
-module.exports = { getPromociones, insertPromociones, deletePromocionByID, getPromocionesByID, updatePromocionByID }
+module.exports = { getPromociones, insertPromociones, deletePromocionByID, getPromocionesByID, updatePromocionByID, getPromocionesfront }
