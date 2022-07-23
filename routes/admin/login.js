@@ -10,6 +10,14 @@ router.get('/', function (req, res, next) {
   });
 }) //view/admin/login.hbs
 
+//para cerrar la sesión
+router.get('/logout', function(req,res,next){
+  req.session.destroy();
+  res.render('admin/login',{
+    layout:'admin/layout'
+  })
+})
+
 //capturar los datos mediante el método post
 router.post('/', async function(req,res,next){
 
