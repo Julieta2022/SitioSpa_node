@@ -140,11 +140,9 @@
     </div>
 
 </section>
-
 <section id="tarifas" class="holder">
     <h3>Tarifas</h3>
-   
-    <div class="combos">
+       <div class="combos">
          {{#each promociones}}
         <div class="combo">
             <h4 class="tarifa">{{combo}}</h4>
@@ -214,15 +212,15 @@
             <form action="/" method="post" class="formulario">
                 <p>
                     <label for="">Nombre y Apellido</label>
-                    <input     type="text" id="nom" name="nombre" required />
+                    <input type="text" id="nom" name="nombre" required />
                 </p>
                 <p>
                     <label for="" >Email</label>
-                    <input type="email" name="email">
+                    <input id="email" type="email" name="email">
                 </p>
                 <p>
                     <label for="">Teléfono</label>
-                    <input type="text" name="tel">
+                    <input id="tel" type="text" name="tel">
                 </p>
                 <p>
                     <label for="">Consulta</label>

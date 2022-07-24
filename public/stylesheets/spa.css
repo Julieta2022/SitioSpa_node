@@ -16,7 +16,6 @@ body>section {
     max-width: 960px;
     /*maxímo ancho pensado para una pantalla de 1024*/
     margin: 0 auto;
-
 }
 
 
@@ -693,21 +692,28 @@ footer {
 /*responsive*/
 @media screen and (max-width:550px) {
 
+    header {
+        height: 140px;
+    }
+    header img {
+        margin: 10px;
+        width: 50px;
+    }
     header h1 {
         font-size: 30px;
         position: relative;
-        margin-top: 35px;
+        margin-top: 20px;
         bottom: 0;
     }
 
     nav {
         margin-top: 0;
+        flex-direction: column;
     }
 
     nav a {
-        font-size: 15px;
+        font-size: 12px;  
     }
-
     .nombre {
         font-size: 40px;
     }
@@ -718,6 +724,10 @@ footer {
 
     .bienvenidos {
         top: -200px
+    }
+
+    .holder{
+        padding-top: 5px;
     }
 
     p {
@@ -746,7 +756,7 @@ footer {
 
     h3 {
         font-size: 25px;
-        margin-top: 10px;
+        /* margin-top: 60px; */
         margin-bottom: 15px;
     }
 
@@ -872,6 +882,87 @@ footer {
         width: 90%;
 
     }
+
+    .combos {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 400px;
+    }
+    
+    .combo{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .combo h4{
+        font-size: 20px;
+        margin: 18px auto;
+    }    
+
+    .combo h5{
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+    .precio h6{
+        padding: 10px;
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    .combo ul{
+        font-size: 12px;
+    }
+
+    #contacto.holder{
+        margin-top: 175px;
+    }
+
+    .contacto{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .consulta h4,
+    .datos h4{
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .formulario p{
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .formulario input[type="submit"]{
+        left:165px;
+    }
+
+    .formulario p label,
+    .formulario p input,
+    .formulario p textarea{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .formulario p label{
+       display: inline-flex;
+    }
+
+    .datos ul{
+        margin: 0;
+        padding: 0;
+    } 
+
+    .fa-solid{
+        font-size: 20px;
+    }
+
+    .datos ul li{
+        font-size: 15px;
+        padding: 5px;
+    }
+
 
 
 }
